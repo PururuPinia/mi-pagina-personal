@@ -1,0 +1,166 @@
+
+/* Paleta de colores inspirada en Cinnamoroll */
+:root {
+    --celeste: #d8edff;
+    --azul-pastel: #a9d5f5;
+    --azul-tierno: #75b5e8;
+    --azul-oscuro: #416b9c;
+    --blanco: #ffffff;
+    --rosa-suave: #f8dce8;
+}
+
+/* Estilos generales */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: var(--azul-oscuro);
+    background-color: #f2f9ff;
+    line-height: 1.7;
+}
+
+/* Encabezado */
+header {
+    background-color: var(--celeste);
+    background-image: linear-gradient(
+        135deg,
+        #dff2ff,
+        #b9ddfa
+    );
+    text-align: center;
+    padding: 35px 20px;
+    border-bottom: 4px solid var(--azul-pastel);
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+    color: var(--azul-oscuro);
+}
+
+header p {
+    margin: 8px 0 0;
+    font-size: 1.1em;
+}
+
+/* Contenido principal */
+main {
+    max-width: 850px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+/* Tarjetas de contenido */
+.tarjeta {
+    background-color: var(--blanco);
+    margin-bottom: 25px;
+    padding: 25px;
+    border: 2px solid var(--azul-pastel);
+    border-radius: 18px;
+    box-shadow: 0 4px 12px rgba(117, 181, 232, 0.12);
+}
+
+.tarjeta h2 {
+    color: var(--azul-oscuro);
+    background-color: var(--celeste);
+    padding: 8px 14px;
+    border-radius: 12px;
+    margin-top: 0;
+}
+
+.tarjeta p {
+    text-align: justify;
+}
+
+/* Lista de intereses */
+ul {
+    padding-left: 25px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+li::marker {
+    color: var(--azul-tierno);
+}
+
+/* Fotografía */
+.fotografia {
+    text-align: center;
+}
+
+.fotografia p {
+    text-align: center;
+}
+
+.fotografia img {
+    width: 230px;
+    max-width: 100%;
+    height: auto;
+    border: 5px solid var(--celeste);
+    border-radius: 18px;
+    padding: 4px;
+    background-color: var(--blanco);
+}
+
+/* Enlaces a redes sociales */
+.enlaces {
+    list-style-type: none;
+    padding: 0;
+}
+
+.enlaces li {
+    background-color: var(--celeste);
+    padding: 10px 15px;
+    margin: 10px 0;
+    border-radius: 12px;
+    transition: background-color 0.3s;
+}
+
+.enlaces li:hover {
+    background-color: var(--rosa-suave);
+}
+
+a {
+    color: var(--azul-oscuro);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: var(--azul-tierno);
+    text-decoration: underline;
+}
+
+/* Pie de página */
+footer {
+    background-color: var(--celeste);
+    color: var(--azul-oscuro);
+    text-align: center;
+    padding: 15px;
+    border-top: 3px solid var(--azul-pastel);
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Adaptación para celulares */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    main {
+        margin: 18px auto;
+        padding: 0 12px;
+    }
+
+    .tarjeta {
+        padding: 16px;
+    }
+}
