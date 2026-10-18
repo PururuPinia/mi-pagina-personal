@@ -1,5 +1,5 @@
 
-/* Paleta de colores inspirada en Cinnamoroll */
+
 :root {
     --celeste: #d8edff;
     --azul-pastel: #a9d5f5;
@@ -9,7 +9,7 @@
     --rosa-suave: #f8dce8;
 }
 
-/* Estilos generales */
+
 * {
     box-sizing: border-box;
 }
@@ -22,7 +22,7 @@ body {
     line-height: 1.7;
 }
 
-/* Encabezado */
+
 header {
     background-color: var(--celeste);
     background-image: linear-gradient(
@@ -46,14 +46,14 @@ header p {
     font-size: 1.1em;
 }
 
-/* Contenido principal */
+
 main {
     max-width: 850px;
     margin: 30px auto;
     padding: 0 20px;
 }
 
-/* Tarjetas de contenido */
+
 .tarjeta {
     background-color: var(--blanco);
     margin-bottom: 25px;
@@ -75,7 +75,7 @@ main {
     text-align: justify;
 }
 
-/* Lista de intereses */
+
 ul {
     padding-left: 25px;
 }
@@ -88,7 +88,7 @@ li::marker {
     color: var(--azul-tierno);
 }
 
-/* Fotografía */
+
 .fotografia {
     text-align: center;
 }
@@ -107,7 +107,7 @@ li::marker {
     background-color: var(--blanco);
 }
 
-/* Enlaces a redes sociales */
+
 .enlaces {
     list-style-type: none;
     padding: 0;
@@ -136,7 +136,7 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Pie de página */
+
 footer {
     background-color: var(--celeste);
     color: var(--azul-oscuro);
@@ -149,18 +149,4 @@ footer p {
     margin: 0;
 }
 
-/* Adaptación para celulares */
-@media (max-width: 600px) {
-    header h1 {
-        font-size: 1.8em;
-    }
 
-    main {
-        margin: 18px auto;
-        padding: 0 12px;
-    }
-
-    .tarjeta {
-        padding: 16px;
-    }
-}
